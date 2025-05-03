@@ -22,6 +22,7 @@ What You’ll Find Here
 - **Talks & Teaching**: Presentations, lectures, and educational resources.
 - **Blog**: Reflections on robotics, tech, and personal growth.
 - **CV**: My academic and professional history in detail.
+- **Art**: A little about my humble art(nothing professional, just expression of my ideas)
 
 Feel free to explore and [connect](shreyashgadgil007@gmail.com) if you'd like to collaborate or chat.
 
