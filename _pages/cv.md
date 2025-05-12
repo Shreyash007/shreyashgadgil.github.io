@@ -11,54 +11,63 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Engineering Design (Specialisation in Robotics), Indian Institute of Technology Madras, 8.56/10, 2022–2024  
+* B.Tech. in Mechanical Engineering, Sardar Patel College of Engineering, Mumbai, 8.94/10, 2015–2019  
+* Higher Secondary Certificate, Balaji Jr. College, Ichalkaranji – 94.15%, 2015  
+* Secondary School Certificate, Vyankateshwara School, Ichalkaranji – 94.73%, 2013  
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Principal Engineer – Robotics**, Technology Innovation Hub, IIT Bombay — *July 2024 – Present*  
+  - Developed autonomous navigation for a ground rover using a depth camera.  
+  - Built automated spin-coating system using SCARA robots and custom grippers.  
+  - Created underwater vehicle simulation in Gazebo with MOOS-IvP integration.  
+  - Worked on ML-based financial decision system for NBFCs.  
+  - **Keywords**: ROS, UUVs, SCARA, serial manipulators, ML, grasp planning, simulation
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Project Research Assistant**, IITM Pravartak Technology Innovation Hub — *July 2022 – July 2024*  
+  - Developed automation for disassembling lithium-ion batteries using UR5e and ROS.  
+  - Designed and implemented hardware, electronics, and software for collaborative robotics.  
+  - **Keywords**: ROS, UR5e, robotic design, grasp planning
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* **Design Engineer / Graduate Engineer Trainee**, Worley India Pvt. Ltd. — *Sep 2019 – May 2021*  
+  - Worked on piping design, plant layouts, and engineering deliverables for oil and chemical industries.  
+  - **Keywords**: 3D modeling, project management, mechanical design
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming**: Python, C++  
+* **Frameworks**: ROS, ROS2, Git  
+* **Simulation & Platforms**: Gazebo, V-REP/CoppeliaSim, MOOS-IvP, PyBullet  
+* **Hardware**: UR5e, Robotiq 3-Finger Gripper, KUKA iiwa 7, TurtleBot  
+* **OS & Tools**: Linux, Windows  
+* **Other**: Motion Planning, Deep Learning (PyTorch), Mechatronics, SLAM, EKF, Visual Servoing  
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html  %}
+{% endfor %}</ul>
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Mentor at iBot Club (Centre for Innovation), IIT Madras for InnoGuide LLM-based navigation robot (2023–24)  
+* Teaching Assistant for:
+  - "Introduction to Field and Service Robotics" (July–Nov 2023)
+  - "Robotics Lab" (July–Nov 2023)
+  - "Introduction to Robotics" (Jan–May 2023)  
+* Represented college in volleyball tournaments  
+* Led teams in E-Yantra (AIR 5), Robocon, and NKRC competitions  
+* Currently signed in to 43 different Slack teams
