@@ -7,13 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal website. I’m a robotics researcher and engineer passionate about bridging theory and practice in intelligent systems, with a focus on grasp planning, underwater vehicles, and human-robot interaction. This site showcases my research, teaching, projects, and thoughts across the intersections of robotics, machine learning, and systems design.
-
-About Me
-======
-I work at the intersection of robotics with AI, mechanical engineering, and control systems. My recent work involves developing grasp planning strategies for a 3-finger adaptive gripper, combining deep learning with PyBullet-based simulation for validation. I’ve also contributed to autonomous underwater vehicle (AUV) control systems using ROS2 and Gazebo, and actively engage in both academic writing and technical leadership. My background includes experience with the UR5e arm, Robotiq grippers, Intel RealSense cameras, MoveIt, and self-balancing robots. Beyond research, I enjoy mentoring, teaching, and exploring applications of VLMs and LLMs in robotics.
-
-Outside of work, I’m an avid book reader and love expressing myself through sketching and painting. I also enjoy watching all kinds of movies and series—from classics to the latest binge-worthy shows.
+Hello! I'm Shreyash, a robotics engineer and a recent graduate of the M.S. program at the Indian Institute of Technology Madras. I am passionate about building intelligent systems that can perceive, understand, and interact with the world around them. My work focuses on the exciting intersection of mechanical design, software development, and artificial intelligence, with projects ranging from autonomous navigation to robotic grasping and industrial automation.
+My academic and professional journey has been a deep dive into the world of robotics, from programming manipulators like the UR5e to developing deep learning models for computer vision. I'm particularly proud of my work on a semi-autonomous system for recycling lithium-ion batteries, a project that combined human-robot collaboration with a focus on sustainability.
+When I'm not engineering a solution, I'm likely exploring my other passions. I have a deep appreciation for mathematics and enjoy expressing my creative side through painting and sketching. I'm also an avid reader of philosophy, a movie and series enthusiast, and a keen volleyball player. I believe that this blend of analytical thinking and creative pursuits is what fuels my innovative approach to robotics
 
 What You’ll Find Here
 ======
