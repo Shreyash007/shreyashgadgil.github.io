@@ -83,6 +83,11 @@ for row, item in publications.iterrows():
     
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
+    category = "manuscripts"
+    if "conference" in str(item.venue).lower() or "icemps" in str(item.venue).lower():
+        category = "conferences"
+    md += "\ncategory: " + category
+    
     if len(str(item.paper_url)) > 5:
         md += "\npaperurl: '" + item.paper_url + "'"
     
