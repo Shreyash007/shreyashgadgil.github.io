@@ -11,7 +11,7 @@ cited_by: 2
 citation: 'S. Gadgil, P. R. Baskar, B. Sebastian, A. Dubey and A. Upadhyay, &quot;Grasp Planning for Underactuated Three-Finger Grippers Using a Novel Triangular Representation,&quot; <i>Journal of Intelligent &amp; Robotic Systems</i>, 111(3), 101, 2025.'
 ---
 
-<a href='/files/paper2.pdf'>Download paper here</a>
+<a href='{{ site.url }}{{ site.baseurl }}/files/paper2.pdf'>Download paper here</a>
 
 This article highlights my masters work for creating a learning based algorithm for three finger gripper grasp planning.
 

@@ -38,7 +38,7 @@ Supported categories are:
 - `patents` for patents
 - `theses` for master's or bachelor's theses
 
-Put PDFs in `files/` and link them as `/files/filename.pdf`.
+Put PDFs in `files/` and link them as `/files/filename.pdf`. The templates add the GitHub Pages base path automatically.
 
 ## Theses
 

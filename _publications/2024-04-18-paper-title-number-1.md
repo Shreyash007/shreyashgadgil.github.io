@@ -11,7 +11,7 @@ cited_by: 10
 citation: 'S. Gadgil, D. Gaikwad, B. Sebastian, A. Dubey and A. Upadhyay, &quot;Semi-Autonomous Robotic System for Efficient Recycling of Lithium-Ion Batteries,&quot; 2024 International Conference on E-mobility, Power Control and Smart Systems (ICEMPS), Thiruvananthapuram, India, 2024, pp. 1-7, doi: 10.1109/ICEMPS60684.2024.10559331.'
 ---
 
-<a href='/files/paper1.pdf'>Download paper here</a>
+<a href='{{ site.url }}{{ site.baseurl }}/files/paper1.pdf'>Download paper here</a>
 
 This paper is about a method to recycle Li-Ion batteries using robotics solution.
 
