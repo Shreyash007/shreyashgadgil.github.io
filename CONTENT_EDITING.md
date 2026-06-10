@@ -278,3 +278,32 @@ Common things to update:
 - fallback card teaser image
 
 After changing `_config.yml`, restart the local Jekyll server if one is running.
+
+## Search Engine Optimization
+
+Important SEO settings are in `_config.yml`:
+
+- `title`
+- `name`
+- `description`
+- `url`
+- `baseurl`
+- `google_site_verification`
+- `social.links`
+
+The generated sitemap is:
+
+```text
+https://shreyash007.github.io/shreyashgadgil.github.io/sitemap.xml
+```
+
+After publishing:
+
+1. Add the website to Google Search Console.
+2. Use Google's HTML tag verification method.
+3. Copy only the verification token into `google_site_verification` in `_config.yml`.
+4. Push the change and complete verification.
+5. Submit the sitemap URL shown above.
+6. Use URL Inspection to request indexing for the homepage.
+
+Google indexing is not immediate. Keep the homepage, publication titles, profile links, and descriptions accurate and use the same name across your website, Google Scholar, ORCID, GitHub, and LinkedIn.

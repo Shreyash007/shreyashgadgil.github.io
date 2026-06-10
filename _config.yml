@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Shreyash Gadgil - Robotics Engineer"
 title_separator          : "-"
 name                     : &name "Shreyash Gadgil"
-description              : &description "Personal website and portfolio of Shreyash Gadgil, a robotics engineer based in India."
+description              : &description "Shreyash Gadgil is a robotics engineer and researcher working on robotic manipulation, autonomous systems, machine learning, and lithium-ion battery recycling."
 url                      : https://shreyash007.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "/shreyashgadgil.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "shreyash007/shreyashgadgil.github.io"
@@ -25,10 +25,10 @@ author:
   avatar           : "profile.png"
   name             : "Shreyash Gadgil"
   pronouns         : # example: "she/her"  
-  bio              : "A creative robotics engineer"
+  bio              : "Robotics engineer and researcher"
   location         : "India"
   employer         : "TIH IIT Bombay"
-  uri              : # URL
+  uri              : "https://shreyash007.github.io/shreyashgadgil.github.io/"
   email            : "shreyashgadgil007@gmail.com" 
 
   # Academic websites
@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "shreyash007"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -121,7 +121,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -139,13 +139,16 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : profile.png # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Shreyash Gadgil"
+  links:
+    - "https://scholar.google.com/citations?user=6_NHHhQAAAAJ&hl=en"
+    - "https://orcid.org/0009-0004-2831-8747"
+    - "https://github.com/shreyash007"
 
 
 # Analytics
@@ -238,7 +241,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -254,7 +257,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:
@@ -263,7 +266,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
@@ -272,7 +275,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 
 # Sass/SCSS
