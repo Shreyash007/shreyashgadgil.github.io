@@ -71,8 +71,6 @@ venue: "Conference or Journal Name"
 category: conferences
 paperurl: "/files/my-new-paper.pdf"
 citation: 'A. Author and S. Gadgil, "My New Paper," Conference or Journal Name, 2026.'
-header:
-  teaser: my-new-paper-card.jpg
 ---
 
 Short description for the publication page.
@@ -106,8 +104,6 @@ venue: "Institute Name"
 category: theses
 paperurl: "/files/masters-thesis.pdf"
 citation: 'S. Gadgil, "Master&apos;s Thesis Title," Master&apos;s thesis, Institute Name, 2025.'
-header:
-  teaser: masters-thesis-card.jpg
 ---
 
 Short thesis description.
@@ -216,6 +212,8 @@ Use `image: "/images/file-name.jpg"` here because the Art page reads from data i
 
 Blog posts live in `_posts/`. Their filenames must start with a date.
 
+Blog posts are shown as cards on the Blog Posts page. Add a teaser image to make the card look good.
+
 Example filename:
 
 ```text
@@ -232,6 +230,8 @@ permalink: /posts/2026/04/my-post-title/
 tags:
   - robotics
   - research
+header:
+  teaser: my-post-card.jpg
 ---
 
 Write the post here.
@@ -242,6 +242,8 @@ Add images like this:
 
 ![Description of image](/images/image-name.jpg)
 ```
+
+Put blog card images in `images/`. The `header.teaser` value should be only the filename, not `/images/...`.
 
 ## CV
 

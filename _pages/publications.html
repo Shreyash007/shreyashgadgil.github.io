@@ -21,21 +21,15 @@ author_profile: true
       {% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
-        <div class="grid__wrapper">
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html type="grid" %}
+      {% include archive-single.html %}
     {% endfor %}
-    {% if title_shown %}
-      </div>
-    {% endif %}
   {% endfor %}
 {% else %}
-  <div class="grid__wrapper">
-    {% for post in site.publications reversed %}
-      {% include archive-single.html type="grid" %}
-    {% endfor %}
-  </div>
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
 {% endif %}
 
 
