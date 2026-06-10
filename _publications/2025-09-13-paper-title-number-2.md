@@ -7,7 +7,6 @@ date: 2025-09-13
 venue: 'Journal of Intelligent & Robotic Systems'
 category: manuscripts
 paperurl: '/files/paper2.pdf'
-cited_by: 2
 citation: 'S. Gadgil, P. R. Baskar, B. Sebastian, A. Dubey and A. Upadhyay, &quot;Grasp Planning for Underactuated Three-Finger Grippers Using a Novel Triangular Representation,&quot; <i>Journal of Intelligent &amp; Robotic Systems</i>, 111(3), 101, 2025.'
 ---
 

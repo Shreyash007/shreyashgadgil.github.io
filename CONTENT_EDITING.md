@@ -24,7 +24,6 @@ date: 2026-05-01
 venue: "Conference or Journal Name"
 category: conferences
 paperurl: "/files/my-new-paper.pdf"
-cited_by: 0
 citation: 'A. Author and S. Gadgil, "My New Paper," Conference or Journal Name, 2026.'
 ---
 
@@ -81,6 +80,49 @@ location: "City, State/Country"
 
 Talk description. Add images in `_talks/` or link to files in `/files/`.
 ```
+
+## Portfolio
+
+Portfolio entries live in `_portfolio/`. Use one Markdown file per project.
+
+Example:
+
+```markdown
+---
+title: "Project Title"
+excerpt: "One sentence summary."
+collection: portfolio
+permalink: /portfolio/project-title
+header:
+  teaser: project-image.jpg
+---
+
+Longer project description.
+
+## What I did
+
+- Built the system
+- Tested the prototype
+- Documented the result
+```
+
+Put teaser images in `images/`. The `header.teaser` value should be only the filename, not the full path.
+
+## Art
+
+Art entries live in `_data/art.yml`. Add one block per artwork.
+
+Example:
+
+```yaml
+- title: "Artwork Title"
+  image: "/images/artwork-title.jpg"
+  year: "2026"
+  medium: "Ink and digital color"
+  description: "Short note about the piece."
+```
+
+Put art images in `images/` and link them as `/images/filename.jpg`.
 
 ## Blog Posts
 

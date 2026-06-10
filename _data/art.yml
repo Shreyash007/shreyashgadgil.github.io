@@ -1,0 +1,14 @@
+# Add art pieces here. Put images in /images/ and reference them with /images/file-name.jpg.
+# If you do not have an image ready yet, leave the placeholder and update it later.
+
+- title: "Example Sketch"
+  image: "/images/500x300.png"
+  year: "2026"
+  medium: "Digital sketch"
+  description: "Replace this with a short note about the piece."
+
+- title: "Example Concept"
+  image: "/images/500x300.png"
+  year: "2026"
+  medium: "Concept art"
+  description: "Replace this with another art entry."
