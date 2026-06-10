@@ -1,12 +1,58 @@
-# Editing site content
+# Website Editing Guide
 
-This site uses Markdown files for publications, talks, and blog posts. Edit the files below, commit, and push; GitHub Pages will rebuild the site.
+This is the local guide for updating the website. Edit the files described here, commit, and push; GitHub Pages will rebuild the site.
+
+Keep filenames lowercase and simple. Use hyphens instead of spaces:
+
+```text
+good: lithium-battery-paper.pdf
+bad: Lithium Battery Paper Final v3.pdf
+```
+
+## Assets
+
+Static files live in these folders:
+
+- `images/` for images used in cards, pages, art, and profile sections
+- `files/` for PDFs, slides, thesis files, BibTeX, and other downloads
+
+Recommended image sizes:
+
+- Card teaser images: `500 x 300 px` or any `5:3` ratio
+- Art gallery images: at least `1000 px` wide, ideally `4:3` or `1:1`
+- Full-width/page images: `1200 px` wide or larger
+- Profile image: square, at least `400 x 400 px`
+
+Recommended formats:
+
+- Use `.jpg` for photos and artwork.
+- Use `.png` for screenshots, diagrams, logos, or images with text.
+- Keep images under about `1 MB` when possible.
+
+For card pages, put the image in `images/` and reference only the filename:
+
+```yaml
+header:
+  teaser: project-image.jpg
+```
+
+For direct image links in page content or data files, use:
+
+```text
+/images/image-name.jpg
+```
+
+For PDFs and downloads, use:
+
+```text
+/files/file-name.pdf
+```
 
 ## Publications
 
-Publication entries live in `_publications/`.
+Publication entries live in `_publications/`. Use one Markdown file per publication, patent, or thesis.
 
-Use one file per item. The filename can be any clear date/title pattern, for example:
+Example filename:
 
 ```text
 _publications/2026-05-01-my-new-paper.md
@@ -25,23 +71,27 @@ venue: "Conference or Journal Name"
 category: conferences
 paperurl: "/files/my-new-paper.pdf"
 citation: 'A. Author and S. Gadgil, "My New Paper," Conference or Journal Name, 2026.'
+header:
+  teaser: my-new-paper-card.jpg
 ---
 
 Short description for the publication page.
 ```
 
-Supported categories are:
+Supported publication categories:
 
 - `manuscripts` for journal articles
 - `conferences` for conference papers
 - `patents` for patents
 - `theses` for master's or bachelor's theses
 
-Put PDFs in `files/` and link them as `/files/filename.pdf`. The templates add the GitHub Pages base path automatically.
+Put paper PDFs in `files/` and link them with `paperurl`.
 
 ## Theses
 
-When you add your master's or bachelor's thesis PDF, place it in `files/`, then add a publication entry with `category: theses`.
+Add theses as publication entries in `_publications/` with `category: theses`.
+
+Put the thesis PDF in `files/`.
 
 Example:
 
@@ -55,7 +105,9 @@ date: 2025-05-01
 venue: "Institute Name"
 category: theses
 paperurl: "/files/masters-thesis.pdf"
-citation: 'S. Gadgil, "Master's Thesis Title," Master&apos;s thesis, Institute Name, 2025.'
+citation: 'S. Gadgil, "Master&apos;s Thesis Title," Master&apos;s thesis, Institute Name, 2025.'
+header:
+  teaser: masters-thesis-card.jpg
 ---
 
 Short thesis description.
@@ -63,50 +115,86 @@ Short thesis description.
 
 ## Talks
 
-Talk entries live in `_talks/`.
+Talk entries live in `_talks/`. Use one Markdown file per talk.
+
+Example filename:
+
+```text
+_talks/2026-04-10-talk-title.md
+```
 
 Example:
 
 ```markdown
 ---
-title: "Talk title"
+title: "Talk Title"
 collection: talks
 type: "Talk"
 permalink: /talks/talk-title
-venue: "Venue name"
+venue: "Venue Name"
 date: 2026-04-10
 location: "City, State/Country"
+excerpt: "One sentence summary of the talk."
+header:
+  teaser: talk-title-card.jpg
 ---
 
-Talk description. Add images in `_talks/` or link to files in `/files/`.
+Talk description. You can add images, links, or slides here.
+
+[Download slides](/files/talk-title-slides.pdf)
 ```
+
+Put slides in `files/`. Put talk card images in `images/`.
 
 ## Portfolio
 
 Portfolio entries live in `_portfolio/`. Use one Markdown file per project.
 
+Good for:
+
+- Robotics projects
+- CAD/design projects
+- Prototypes
+- Software demos
+- Research systems
+
+Example filename:
+
+```text
+_portfolio/robotic-battery-disassembly.md
+```
+
 Example:
 
 ```markdown
 ---
-title: "Project Title"
-excerpt: "One sentence summary."
+title: "Robotic Battery Disassembly"
+excerpt: "A semi-autonomous system for lithium-ion battery recycling."
 collection: portfolio
-permalink: /portfolio/project-title
+permalink: /portfolio/robotic-battery-disassembly
 header:
-  teaser: project-image.jpg
+  teaser: robotic-battery-disassembly.jpg
 ---
 
-Longer project description.
+## Summary
 
-## What I did
+Short project overview.
 
-- Built the system
-- Tested the prototype
-- Documented the result
+## My Role
+
+What you personally built or contributed.
+
+## Tools
+
+- ROS 2
+- Python
+- CAD
+- Computer vision
+
+## Result
+
+What worked, what you learned, links to videos/code/papers.
 ```
-
-Put teaser images in `images/`. The `header.teaser` value should be only the filename, not the full path.
 
 ## Art
 
@@ -122,11 +210,13 @@ Example:
   description: "Short note about the piece."
 ```
 
-Put art images in `images/` and link them as `/images/filename.jpg`.
+Use `image: "/images/file-name.jpg"` here because the Art page reads from data instead of a Markdown page.
 
 ## Blog Posts
 
-Blog posts live in `_posts/`. Their filenames must start with a date:
+Blog posts live in `_posts/`. Their filenames must start with a date.
+
+Example filename:
 
 ```text
 _posts/2026-04-10-my-post-title.md
@@ -145,4 +235,44 @@ tags:
 ---
 
 Write the post here.
+
+## Section Heading
+
+Add images like this:
+
+![Description of image](/images/image-name.jpg)
 ```
+
+## CV
+
+The main CV page is `_pages/cv.md`.
+
+If you use the JSON CV page, edit `_data/cv.json`, but the Markdown CV is usually easier to maintain.
+
+## Navigation
+
+Top navigation is controlled by `_data/navigation.yml`.
+
+Each item looks like this:
+
+```yaml
+- title: "Publications"
+  url: /publications/
+```
+
+Remove an item from this file to remove it from the top menu.
+
+## Site Settings
+
+Site-wide settings live in `_config.yml`.
+
+Common things to update:
+
+- `title`
+- `description`
+- `author` details
+- social/profile links
+- `url` and `baseurl`
+- fallback card teaser image
+
+After changing `_config.yml`, restart the local Jekyll server if one is running.
