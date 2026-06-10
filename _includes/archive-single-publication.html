@@ -1,0 +1,30 @@
+{% include base_path %}
+
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign paper_url = false %}
+
+{% if post.paperurl %}
+  {% if post.paperurl contains "://" %}
+    {% assign paper_url = post.paperurl %}
+  {% else %}
+    {% assign paper_url = post.paperurl | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
+<div class="publication-list__item">
+  <h3 class="publication-list__title">
+    <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+  </h3>
+
+  {% if post.venue or post.date %}
+    <p class="publication-list__meta">
+      {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}
+    </p>
+  {% endif %}
+
+  {% if paper_url %}
+    <a class="btn btn--primary publication-list__download" href="{{ paper_url }}">
+      <i class="fas fa-file-pdf" aria-hidden="true"></i> Download Paper
+    </a>
+  {% endif %}
+</div>

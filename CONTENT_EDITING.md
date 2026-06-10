@@ -85,6 +85,8 @@ Supported publication categories:
 
 Put paper PDFs in `files/` and link them with `paperurl`.
 
+The Publications page intentionally uses a compact list. It displays only the title, venue/year, and a Download Paper button. The longer excerpt and citation remain available on the individual publication page.
+
 ## Theses
 
 Add theses as publication entries in `_publications/` with `category: theses`.
@@ -213,6 +215,8 @@ Use `image: "/images/file-name.jpg"` here because the Art page reads from data i
 Blog posts live in `_posts/`. Their filenames must start with a date.
 
 Blog posts are shown as cards on the Blog Posts page. Add a teaser image to make the card look good.
+
+Blog cards use a responsive two-column grid on larger screens and one column on mobile.
 
 Example filename:
 
