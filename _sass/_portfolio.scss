@@ -159,33 +159,42 @@
 
 .home-carousel__viewport {
   position: relative;
-  min-height: clamp(260px, 48vw, 440px);
+  aspect-ratio: 16 / 10;
+  min-height: 260px;
   overflow: hidden;
   border-radius: 20px;
-  background: var(--portfolio-surface);
+  background:
+    radial-gradient(circle at center, rgba(19, 124, 139, 0.1), transparent 60%),
+    var(--portfolio-surface);
   box-shadow: var(--portfolio-shadow);
 }
 
 .home-carousel__slide {
   position: absolute;
   inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
+  padding: 1rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.45s ease;
+  transform: translateX(1.25rem);
+  transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
 .home-carousel__slide.is-active {
   opacity: 1;
   pointer-events: auto;
+  transform: translateX(0);
 }
 
 .home-carousel__slide img {
   width: 100%;
   height: 100%;
   margin: 0;
-  object-fit: cover;
-  border-radius: 0;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 .home-carousel__slide figcaption {
@@ -388,6 +397,10 @@
 }
 
 @media (min-width: 600px) {
+  .home-carousel__slide {
+    padding: 1.25rem;
+  }
+
   .art-wall {
     column-count: 2;
   }
