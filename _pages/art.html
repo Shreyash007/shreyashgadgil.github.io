@@ -7,52 +7,20 @@ author_profile: true
 
 {% include base_path %}
 
-<p>Sketches, visual experiments, and personal art.</p>
+<p class="section-kicker">Selected work</p>
+<p>Paintings, portraits, character studies, and visual experiments. The wall keeps each piece in its original proportions; select an image to view it at full size.</p>
 
-<style>
-  .art-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .art-item {
-    margin: 0;
-  }
-
-  .art-item img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
-  }
-
-  .art-item figcaption {
-    margin-top: 0.5rem;
-  }
-
-  .art-item h2 {
-    font-size: 1rem;
-    margin: 0 0 0.2rem;
-  }
-
-  .art-item p {
-    margin: 0.15rem 0;
-    font-size: 0.9rem;
-  }
-</style>
-
-<div class="art-grid">
+<div class="art-wall">
   {% for item in site.data.art %}
     {% if item.image contains "://" %}
       {% assign image_url = item.image %}
     {% else %}
       {% assign image_url = item.image | prepend: base_path %}
     {% endif %}
-    <figure class="art-item">
-      <img src="{{ image_url }}" alt="{{ item.title }}">
+    <figure class="art-card">
+      <a class="art-card__image image-popup" href="{{ image_url }}">
+        <img src="{{ image_url }}" alt="{{ item.title }}" loading="lazy">
+      </a>
       <figcaption>
         <h2>{{ item.title }}</h2>
         {% if item.medium or item.year %}

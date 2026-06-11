@@ -1,14 +1,35 @@
-# Add art pieces here. Put images in /images/ and reference them with /images/file-name.jpg.
-# If you do not have an image ready yet, leave the placeholder and update it later.
+- title: "Street Landscape"
+  image: "/images/art/street_landscape.jpg"
+  medium: "Painting"
 
-- title: "Example Sketch"
-  image: "/images/500x300.png"
-  year: "2026"
-  medium: "Digital sketch"
-  description: "Replace this with a short note about the piece."
+- title: "Mountain Landscape"
+  image: "/images/art/landscape_mountain.jpg"
+  medium: "Painting"
 
-- title: "Example Concept"
-  image: "/images/500x300.png"
-  year: "2026"
-  medium: "Concept art"
-  description: "Replace this with another art entry."
+- title: "Kid Portrait"
+  image: "/images/art/kid_portrait.jpg"
+  medium: "Portrait"
+
+- title: "Karna"
+  image: "/images/art/karna.jpg"
+  medium: "Character study"
+
+- title: "Joker"
+  image: "/images/art/joker.jpg"
+  medium: "Portrait study"
+
+- title: "Daredevil"
+  image: "/images/art/daredevil.jpg"
+  medium: "Character study"
+
+- title: "Candle"
+  image: "/images/art/candle_painting.jpg"
+  medium: "Painting"
+
+- title: "Boat on the Shore"
+  image: "/images/art/boat_on_the_shore.jpg"
+  medium: "Landscape"
+
+- title: "Boat on the Coast"
+  image: "/images/art/boat_on_coast.jpg"
+  medium: "Landscape"

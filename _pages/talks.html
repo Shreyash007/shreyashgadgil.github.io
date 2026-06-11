@@ -7,14 +7,66 @@ author_profile: true
 
 {% include base_path %}
 
+<p class="section-kicker">Speaking and teaching</p>
+<p>A visual index of workshops, lectures, and hands-on sessions. These photographs are grouped by event for now; details and write-ups can be added later.</p>
+
+<div class="talk-groups">
+  <section class="talk-group">
+    <div class="talk-group__header">
+      <h2>CIR, IIIT Allahabad</h2>
+      <span>3 photos</span>
+    </div>
+    <div class="talk-group__photos">
+      <a class="image-popup" href="{{ base_path }}/images/talks/CIR, IIIT allahbad.jpg"><img src="{{ base_path }}/images/talks/CIR, IIIT allahbad.jpg" alt="Session at CIR, IIIT Allahabad" loading="lazy"></a>
+      <a class="image-popup" href="{{ base_path }}/images/talks/CIR, IIIT allahbad-2.jpg"><img src="{{ base_path }}/images/talks/CIR, IIIT allahbad-2.jpg" alt="Session at CIR, IIIT Allahabad" loading="lazy"></a>
+      <a class="image-popup" href="{{ base_path }}/images/talks/CIR, IIIT allahbad-3.jpg"><img src="{{ base_path }}/images/talks/CIR, IIIT allahbad-3.jpg" alt="Session at CIR, IIIT Allahabad" loading="lazy"></a>
+    </div>
+  </section>
+
+  <section class="talk-group">
+    <div class="talk-group__header">
+      <h2>Battery Disassembly</h2>
+      <span>2 photos</span>
+    </div>
+    <div class="talk-group__photos">
+      <a class="image-popup" href="{{ base_path }}/images/talks/battery_disassembly.jpg"><img src="{{ base_path }}/images/talks/battery_disassembly.jpg" alt="Battery disassembly session" loading="lazy"></a>
+      <a class="image-popup" href="{{ base_path }}/images/talks/battery_disassembly-2.jpg"><img src="{{ base_path }}/images/talks/battery_disassembly-2.jpg" alt="Battery disassembly session" loading="lazy"></a>
+    </div>
+  </section>
+
+  <section class="talk-group">
+    <div class="talk-group__header">
+      <h2>Teaching Young Learners</h2>
+      <span>2 photos</span>
+    </div>
+    <div class="talk-group__photos">
+      <a class="image-popup" href="{{ base_path }}/images/talks/teaching_kids.jpg"><img src="{{ base_path }}/images/talks/teaching_kids.jpg" alt="Teaching session with young learners" loading="lazy"></a>
+      <a class="image-popup" href="{{ base_path }}/images/talks/teaching_kids_2.jpg"><img src="{{ base_path }}/images/talks/teaching_kids_2.jpg" alt="Teaching session with young learners" loading="lazy"></a>
+    </div>
+  </section>
+
+  <section class="talk-group">
+    <div class="talk-group__header">
+      <h2>Upskilling for Mumbai University</h2>
+      <span>1 photo</span>
+    </div>
+    <div class="talk-group__photos">
+      <a class="image-popup" href="{{ base_path }}/images/talks/Upskilling_for_mumbai_university.jpg"><img src="{{ base_path }}/images/talks/Upskilling_for_mumbai_university.jpg" alt="Upskilling session for Mumbai University" loading="lazy"></a>
+    </div>
+  </section>
+</div>
+
 {% if site.talkmap_link == true %}
 
 <p style="text-decoration:underline;"><a href="{{ base_path }}/talkmap.html">See a map of all the places I've given a talk!</a></p>
 
 {% endif %}
 
+{% if site.talks.size > 0 %}
+<h2>Talk archive</h2>
 <div class="grid__wrapper">
   {% for post in site.talks reversed %}
     {% include archive-single-talk.html type="grid" %}
   {% endfor %}
 </div>
+{% endif %}
