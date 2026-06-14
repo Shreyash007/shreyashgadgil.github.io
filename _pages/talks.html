@@ -16,6 +16,7 @@ author_profile: true
       <h2>CIR, IIIT Allahabad</h2>
       <span>3 photos</span>
     </div>
+    <p class="talk-group__details"><strong>Technical session</strong> at the Centre for Intelligent Robotics, IIIT Allahabad. A discussion around robotics research, system development, and practical implementation. More details will be added.</p>
     <div class="talk-group__photos">
       <a class="image-popup" href="{{ base_path }}/images/talks/CIR, IIIT allahbad.jpg"><img src="{{ base_path }}/images/talks/CIR, IIIT allahbad.jpg" alt="Session at CIR, IIIT Allahabad" loading="lazy"></a>
       <a class="image-popup" href="{{ base_path }}/images/talks/CIR, IIIT allahbad-2.jpg"><img src="{{ base_path }}/images/talks/CIR, IIIT allahbad-2.jpg" alt="Session at CIR, IIIT Allahabad" loading="lazy"></a>
@@ -28,6 +29,7 @@ author_profile: true
       <h2>Battery Disassembly</h2>
       <span>2 photos</span>
     </div>
+    <p class="talk-group__details"><strong>Research demonstration</strong> of a semi-autonomous lithium-ion battery disassembly system using a UR5e manipulator, vision-based localization, grasp planning, and a custom extraction mechanism.</p>
     <div class="talk-group__photos">
       <a class="image-popup" href="{{ base_path }}/images/talks/battery_disassembly.jpg"><img src="{{ base_path }}/images/talks/battery_disassembly.jpg" alt="Battery disassembly session" loading="lazy"></a>
       <a class="image-popup" href="{{ base_path }}/images/talks/battery_disassembly-2.jpg"><img src="{{ base_path }}/images/talks/battery_disassembly-2.jpg" alt="Battery disassembly session" loading="lazy"></a>
@@ -39,6 +41,7 @@ author_profile: true
       <h2>Teaching Young Learners</h2>
       <span>2 photos</span>
     </div>
+    <p class="talk-group__details"><strong>Hands-on learning session</strong> introducing young students to engineering and technology through demonstrations and interactive activities. Session details will be expanded later.</p>
     <div class="talk-group__photos">
       <a class="image-popup" href="{{ base_path }}/images/talks/teaching_kids.jpg"><img src="{{ base_path }}/images/talks/teaching_kids.jpg" alt="Teaching session with young learners" loading="lazy"></a>
       <a class="image-popup" href="{{ base_path }}/images/talks/teaching_kids_2.jpg"><img src="{{ base_path }}/images/talks/teaching_kids_2.jpg" alt="Teaching session with young learners" loading="lazy"></a>
@@ -50,6 +53,7 @@ author_profile: true
       <h2>Upskilling for Mumbai University</h2>
       <span>1 photo</span>
     </div>
+    <p class="talk-group__details"><strong>Faculty and student upskilling session</strong> for Mumbai University, focused on applied engineering and emerging technology. Topic, date, and supporting material will be added later.</p>
     <div class="talk-group__photos">
       <a class="image-popup" href="{{ base_path }}/images/talks/Upskilling_for_mumbai_university.jpg"><img src="{{ base_path }}/images/talks/Upskilling_for_mumbai_university.jpg" alt="Upskilling session for Mumbai University" loading="lazy"></a>
     </div>
@@ -60,13 +64,4 @@ author_profile: true
 
 <p style="text-decoration:underline;"><a href="{{ base_path }}/talkmap.html">See a map of all the places I've given a talk!</a></p>
 
-{% endif %}
-
-{% if site.talks.size > 0 %}
-<h2>Talk archive</h2>
-<div class="grid__wrapper">
-  {% for post in site.talks reversed %}
-    {% include archive-single-talk.html type="grid" %}
-  {% endfor %}
-</div>
 {% endif %}

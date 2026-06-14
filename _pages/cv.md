@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<p><a class="btn btn--primary" href="{{ base_path }}/files/CV.pdf" download><i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV (PDF)</a></p>
+
 Education
 ======
 * M.S. in Engineering Design (Specialisation in Robotics), Indian Institute of Technology Madras, 8.56/10, 2022–2024  

@@ -14,11 +14,8 @@ main:
   - title: "Talks"
     url: /talks/    
 
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Projects & Notes"
+    url: /work/
     
   - title: "CV"
     url: /cv/

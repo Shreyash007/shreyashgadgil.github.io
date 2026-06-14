@@ -15,7 +15,7 @@ redirect_from:
   <h1>I am a <span class="home-intro__role" data-roles="researcher,roboticist,mechanical designer,full-stack problem solver,artist,reader">researcher</span>.</h1>
   <p class="home-intro__lede">I build intelligent systems that perceive, understand, and interact with the physical world, from robotic manipulation and autonomous systems to practical tools for industry.</p>
   <div class="home-actions">
-    <a class="home-action" href="{{ base_path }}/portfolio/">Explore my work</a>
+    <a class="home-action" href="{{ base_path }}/work/">Explore my work</a>
     <a class="home-action" href="mailto:shreyashgadgil007@gmail.com">Start a conversation</a>
   </div>
 </section>
@@ -56,7 +56,7 @@ redirect_from:
 <p class="section-kicker">Explore</p>
 <div class="home-route-grid">
   <a class="home-route" href="{{ base_path }}/publications/"><strong>Research</strong><span>Publications, patents, and theses</span></a>
-  <a class="home-route" href="{{ base_path }}/portfolio/"><strong>Projects</strong><span>Robotics, AI, design, and automation</span></a>
+  <a class="home-route" href="{{ base_path }}/work/"><strong>Projects & Notes</strong><span>Robotics, design, experiments, and writing</span></a>
   <a class="home-route" href="{{ base_path }}/talks/"><strong>Talks</strong><span>Presentations and teaching</span></a>
   <a class="home-route" href="{{ base_path }}/art/"><strong>Art</strong><span>Paintings, sketches, and studies</span></a>
 </div>

@@ -142,11 +142,32 @@
   ],
   "portfolio": [
     {
-      "name": "Example Robotics Project",
+      "name": "Semi-Autonomous Battery Disassembly",
       "category": "portfolio",
       "date": "",
-      "url": "",
-      "description": "Short project summary. Replace this with a real project if you use the JSON CV page."
+      "url": "/portfolio/semi-autonomous-battery-disassembly/",
+      "description": "Human-robot collaboration system for direct recycling of lithium-ion pouch cells."
+    },
+    {
+      "name": "Grasp Planning for Three-Finger Grippers",
+      "category": "portfolio",
+      "date": "",
+      "url": "/portfolio/three-finger-grasp-planning/",
+      "description": "Triangular grasp representation and RGB-D deep-learning pipeline for underactuated grippers."
+    },
+    {
+      "name": "Autonomous Vineyard Data-Collection Rover",
+      "category": "portfolio",
+      "date": "",
+      "url": "/portfolio/vineyard-navigation-rover/",
+      "description": "Hybrid vision and RTK-GNSS navigation for crop imagery collection in dense vineyards."
+    },
+    {
+      "name": "Autonomous Tracked Vehicle",
+      "category": "portfolio",
+      "date": "",
+      "url": "/portfolio/autonomous-tracked-vehicle/",
+      "description": "Ongoing tracked mobile robot build covering mechanics, electronics, perception, and autonomy."
     }
   ]
 }

@@ -1,4 +1,5 @@
 {% assign cv = site.data.cv %}
+{% include base_path %}
 
 <div class="cv-container">
   <!-- Basic Information -->
@@ -228,7 +229,11 @@
           {% endif %}
           {% if item.url %}
           <div class="cv-item-detail">
-            <a href="{{ item.url }}" target="_blank">View Project</a>
+            {% if item.url contains "://" %}
+              <a href="{{ item.url }}" target="_blank" rel="noopener">View Project</a>
+            {% else %}
+              <a href="{{ item.url | prepend: base_path }}">View Project</a>
+            {% endif %}
           </div>
           {% endif %}
         </div>

@@ -1,17 +1,30 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Projects & Notes"
+permalink: /work/
 author_profile: true
+redirect_from:
+  - /portfolio/
+  - /year-archive/
 ---
 
 {% include base_path %}
 
-Project work, builds, and experiments.
+<p class="section-kicker">Build, test, reflect</p>
+<p>Technical case studies, ongoing builds, and occasional notes from my work across robotics, mechanical design, autonomy, and machine learning.</p>
 
-<div class="grid__wrapper">
+<h2>Projects</h2>
+<div class="work-grid">
   {% for post in site.portfolio %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
 
+{% if site.posts.size > 0 %}
+<h2>Notes</h2>
+<div class="work-grid">
+  {% for post in site.posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+{% endif %}
