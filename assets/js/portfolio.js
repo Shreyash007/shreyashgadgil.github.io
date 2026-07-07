@@ -1,23 +1,6 @@
 (function () {
   "use strict";
 
-  var roleElement = document.querySelector("[data-roles]");
-  if (roleElement) {
-    var roles = roleElement.getAttribute("data-roles").split(",");
-    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var roleIndex = 0;
-
-    if (!reduceMotion && roles.length > 1) {
-      window.setInterval(function () {
-        roleIndex = (roleIndex + 1) % roles.length;
-        roleElement.classList.remove("is-changing");
-        void roleElement.offsetWidth;
-        roleElement.textContent = roles[roleIndex];
-        roleElement.classList.add("is-changing");
-      }, 2400);
-    }
-  }
-
   Array.prototype.forEach.call(document.querySelectorAll("[data-carousel]"), function (carousel) {
     var viewport = carousel.querySelector(".home-carousel__viewport");
     var slides = Array.prototype.slice.call(carousel.querySelectorAll(".home-carousel__slide"));
@@ -31,11 +14,11 @@
 
     if (!viewport || !slides.length || !current || !total || !previousButton || !nextButton) return;
 
-    for (var index = slides.length - 1; index > 0; index -= 1) {
-      var randomIndex = Math.floor(Math.random() * (index + 1));
-      var temporarySlide = slides[index];
-      slides[index] = slides[randomIndex];
-      slides[randomIndex] = temporarySlide;
+    if (slides.length > 1) {
+      var threeDays = 3 * 24 * 60 * 60 * 1000;
+      var rotationBucket = Math.floor(Date.now() / threeDays);
+      var startOffset = rotationBucket % slides.length;
+      slides = slides.slice(startOffset).concat(slides.slice(0, startOffset));
     }
 
     slides.forEach(function (slide) {
@@ -43,6 +26,7 @@
       viewport.appendChild(slide);
     });
     slides[0].classList.add("is-active");
+    current.textContent = "1";
     total.textContent = slides.length;
 
     var showSlide = function (newIndex) {

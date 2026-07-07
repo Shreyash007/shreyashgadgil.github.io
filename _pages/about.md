@@ -11,39 +11,42 @@ redirect_from:
 {% include base_path %}
 
 <section class="home-intro">
-  <p class="home-intro__eyebrow">Research, engineering, and making</p>
-  <h1>I am a <span class="home-intro__role" data-roles="researcher,roboticist,mechanical designer,full-stack problem solver,artist,reader">researcher</span>.</h1>
-  <p class="home-intro__lede">I build intelligent systems that perceive, understand, and interact with the physical world, from robotic manipulation and autonomous systems to practical tools for industry.</p>
-  <div class="home-actions">
-    <a class="home-action" href="{{ base_path }}/work/">Explore my work</a>
-    <a class="home-action" href="mailto:shreyashgadgil007@gmail.com">Start a conversation</a>
+  <div class="home-intro__content">
+    <p class="home-intro__eyebrow">Robotics, systems, and observation</p>
+    <h1>I build intelligent machines for the physical world.</h1>
+    <p class="home-intro__lede">My work moves between robotic manipulation, autonomous systems, mechanical design, and the quieter habits of art and reading that sharpen how I notice problems.</p>
+    <div class="home-actions">
+      <a class="home-action" href="{{ base_path }}/work/">Explore my work</a>
+      <a class="home-action" href="mailto:shreyashgadgil007@gmail.com">Start a conversation</a>
+    </div>
+  </div>
+  <div class="home-intro__media" aria-label="Glimpses of teaching and visual observation">
+    <img class="home-intro__image-main" src="{{ base_path }}/images/talks/teaching_kids_2.jpg" alt="Teaching robotics concepts in a classroom">
+    <img class="home-intro__image-accent" src="{{ base_path }}/images/art/street_landscape.jpg" alt="Color study of a street landscape" loading="lazy">
   </div>
 </section>
 
-<p class="section-kicker">Many ways of thinking</p>
-<div class="identity-grid">
-  <article class="identity-card"><span class="identity-card__number">01</span><h2>Researcher</h2><p>Turning open questions into testable systems.</p></article>
-  <article class="identity-card"><span class="identity-card__number">02</span><h2>Roboticist</h2><p>Perception, planning, manipulation, and autonomy.</p></article>
-  <article class="identity-card"><span class="identity-card__number">03</span><h2>Mechanical designer</h2><p>Making ideas survive contact with the physical world.</p></article>
-  <article class="identity-card"><span class="identity-card__number">04</span><h2>Full-stack problem solver</h2><p>Connecting hardware, software, data, and deployment.</p></article>
-  <article class="identity-card"><span class="identity-card__number">05</span><h2>Artist</h2><p>Studying color, character, form, and observation.</p></article>
-  <article class="identity-card"><span class="identity-card__number">06</span><h2>Reader</h2><p>Following ideas through mathematics, philosophy, and stories.</p></article>
+<p class="section-kicker">What I Work Across</p>
+<div class="identity-grid home-focus-grid">
+  <article class="identity-card home-focus-card"><span class="identity-card__number">01</span><h2>Robotic systems</h2><p>Manipulation, autonomy, sensing, and motion.</p></article>
+  <article class="identity-card home-focus-card"><span class="identity-card__number">02</span><h2>Physical prototypes</h2><p>Mechanisms, experiments, validation, and deployment.</p></article>
+  <article class="identity-card home-focus-card"><span class="identity-card__number">03</span><h2>Creative observation</h2><p>Art, reading, teaching, and framing problems clearly.</p></article>
 </div>
 
-<p class="section-kicker">A few frames</p>
+<p class="section-kicker">Scenes From the Work</p>
 <div class="home-carousel" data-carousel>
   <div class="home-carousel__viewport" aria-live="polite">
     <figure class="home-carousel__slide is-active">
       <img src="{{ base_path }}/images/talks/battery_disassembly.jpg" alt="Hands-on battery disassembly work">
-      <figcaption>Engineering for the physical world: semi-autonomous lithium-ion battery recycling.</figcaption>
+      <figcaption>Presenting semi-autonomous battery disassembly work.</figcaption>
     </figure>
     <figure class="home-carousel__slide">
       <img src="{{ base_path }}/images/talks/CIR, IIIT allahbad.jpg" alt="Shreyash speaking during a technical session" loading="lazy">
-      <figcaption>Sharing ideas through talks, workshops, and hands-on learning.</figcaption>
+      <figcaption>Teaching robotics concepts through hands-on systems.</figcaption>
     </figure>
     <figure class="home-carousel__slide">
       <img src="{{ base_path }}/images/art/street_landscape.jpg" alt="Colorful street landscape painting" loading="lazy">
-      <figcaption>Creative practice sharpens how I observe, frame, and solve technical problems.</figcaption>
+      <figcaption>Sketchbook practice for color, form, and observation.</figcaption>
     </figure>
   </div>
   <div class="home-carousel__controls">
