@@ -9,6 +9,7 @@
     var previousButton = carousel.querySelector("[data-carousel-prev]");
     var nextButton = carousel.querySelector("[data-carousel-next]");
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var interval = parseInt(carousel.getAttribute("data-carousel-interval"), 10) || 5000;
     var autoplayTimer;
     var activeIndex = 0;
 
@@ -21,8 +22,9 @@
       slides = slides.slice(startOffset).concat(slides.slice(0, startOffset));
     }
 
-    slides.forEach(function (slide) {
+    slides.forEach(function (slide, index) {
       slide.classList.remove("is-active");
+      slide.setAttribute("aria-hidden", index === 0 ? "false" : "true");
       viewport.appendChild(slide);
     });
     slides[0].classList.add("is-active");
@@ -31,8 +33,10 @@
 
     var showSlide = function (newIndex) {
       slides[activeIndex].classList.remove("is-active");
+      slides[activeIndex].setAttribute("aria-hidden", "true");
       activeIndex = (newIndex + slides.length) % slides.length;
       slides[activeIndex].classList.add("is-active");
+      slides[activeIndex].setAttribute("aria-hidden", "false");
       current.textContent = activeIndex + 1;
     };
 
@@ -45,7 +49,7 @@
       if (!reduceMotion && slides.length > 1 && !document.hidden) {
         autoplayTimer = window.setInterval(function () {
           showSlide(activeIndex + 1);
-        }, 5000);
+        }, interval);
       }
     };
 
