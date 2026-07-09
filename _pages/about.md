@@ -19,13 +19,14 @@ redirect_from:
   </aside>
 
   <div class="home-hero__copy">
-    <p class="home-hero__eyebrow">Robotics portfolio</p>
-    <h1>Robotic systems for the messy physical world.</h1>
-    <p class="home-hero__lede">I build manipulation, autonomy, and mechatronic systems that move from lab ideas into tested hardware.</p>
+    <p class="home-hero__eyebrow">Robotics engineer</p>
+    <h1>I build robots that sense, move, and work in the real world.</h1>
+    <p class="home-hero__lede">I'm Shreyash Gadgil, a robotics engineer working across manipulation, autonomous systems, mechanical design, and machine-learning pipelines. I like building systems that leave the lab notebook and survive contact with real hardware, sensors, tolerances, and people.</p>
     <div class="home-hero__signals" aria-label="Selected areas of work">
-      <span>UR5e manipulation</span>
-      <span>ROS and MoveIt</span>
-      <span>Mechanical prototypes</span>
+      <span>Robotic manipulation</span>
+      <span>Autonomous systems</span>
+      <span>Mechatronics</span>
+      <span>ML for robotics</span>
     </div>
     <div class="home-actions">
       <a class="home-action" href="{{ base_path }}/work/">View projects</a>
@@ -51,6 +52,7 @@ redirect_from:
       {
         "src": "{{ base_path }}/images/3-finger-grasp-planning/hardware_setup.png",
         "alt": "UR5e and Robotiq three-finger gripper hardware setup",
+        "position": "center center",
         "kicker": "Robotic manipulation",
         "title": "Learning-based grasp planning",
         "text": "A UR5e, RGB-D perception, and a three-finger gripper brought into the same execution loop."
@@ -58,6 +60,7 @@ redirect_from:
       {
         "src": "{{ base_path }}/images/battery_disassembly/Setup.jpg",
         "alt": "UR5e robot and semi-autonomous battery disassembly setup",
+        "position": "center center",
         "kicker": "Human-robot collaboration",
         "title": "Semi-autonomous battery disassembly",
         "text": "A direct-recycling workflow that pairs robotic handling with a purpose-built pouch-cell mechanism."
@@ -65,16 +68,18 @@ redirect_from:
       {
         "src": "{{ base_path }}/images/talks/teaching_kids_2.jpg",
         "alt": "Teaching robotics concepts in a classroom",
+        "position": "center center",
         "kicker": "Teaching through systems",
         "title": "Hands-on robotics sessions",
         "text": "Demos, tools, and classroom systems that make abstract motion feel concrete."
       },
       {
-        "src": "{{ base_path }}/images/talks/Upskilling_for_mumbai_university.jpg",
-        "alt": "Robotics upskilling workshop with students",
-        "kicker": "Applied learning",
-        "title": "Workshops and robotics outreach",
-        "text": "Practical sessions that connect mechanisms, code, perception, and real-world intuition."
+        "src": "{{ base_path }}/images/battery_disassembly/Mechanism%20description.jpg",
+        "alt": "Three-stage pouch-cell disassembly mechanism with grippers, cutter, DC motor, and linear actuator",
+        "position": "center center",
+        "kicker": "Mechanism design",
+        "title": "Purpose-built disassembly hardware",
+        "text": "A three-stage mechanism for securing, cutting, and extracting electrode stacks from pouch-cell mockups."
       }
     ]
   </script>

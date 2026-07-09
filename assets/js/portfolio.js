@@ -55,6 +55,7 @@
     var updateSlideContent = function (slide) {
       image.src = slide.src;
       image.alt = slide.alt || "";
+      image.style.objectPosition = slide.position || "center center";
       kicker.textContent = slide.kicker || "";
       title.textContent = slide.title || "";
       text.textContent = slide.text || "";
