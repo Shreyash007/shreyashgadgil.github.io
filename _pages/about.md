@@ -10,15 +10,22 @@ redirect_from:
 
 {% include base_path %}
 
-<section class="home-hero" data-hero-stage data-hero-interval="7200" aria-label="Homepage introduction">
+<section class="home-hero home-hero--cinematic" data-hero-stage data-hero-interval="6200" aria-label="Homepage introduction">
+  <aside class="home-hero__showcase" aria-live="polite">
+    <div class="home-hero__visual">
+      <img src="{{ base_path }}/images/3-finger-grasp-planning/hardware_setup.png" alt="UR5e and Robotiq three-finger gripper hardware setup" data-hero-image>
+    </div>
+    <div class="home-hero__shade" aria-hidden="true"></div>
+  </aside>
+
   <div class="home-hero__copy">
-    <p class="home-hero__eyebrow">Robotics, manipulation, and physical systems</p>
-    <h1>Building robotic systems that move from lab ideas to real hardware.</h1>
-    <p class="home-hero__lede">I work on robotic manipulation, autonomous systems, mechanical design, and machine-learning pipelines for machines that need to behave reliably in the physical world.</p>
+    <p class="home-hero__eyebrow">Robotics portfolio</p>
+    <h1>Robotic systems for the messy physical world.</h1>
+    <p class="home-hero__lede">I build manipulation, autonomy, and mechatronic systems that move from lab ideas into tested hardware.</p>
     <div class="home-hero__signals" aria-label="Selected areas of work">
-      <span>Manipulation</span>
-      <span>Autonomy</span>
-      <span>Prototyping</span>
+      <span>UR5e manipulation</span>
+      <span>ROS and MoveIt</span>
+      <span>Mechanical prototypes</span>
     </div>
     <div class="home-actions">
       <a class="home-action" href="{{ base_path }}/work/">View projects</a>
@@ -26,33 +33,21 @@ redirect_from:
     </div>
   </div>
 
-  <aside class="home-hero__showcase" aria-live="polite">
-    <div class="home-hero__visual">
-      <img src="{{ base_path }}/images/talks/teaching_kids_2.jpg" alt="Teaching robotics concepts in a classroom" data-hero-image>
-    </div>
-    <div class="home-hero__shade" aria-hidden="true"></div>
-    <div class="home-hero__caption">
-      <span data-hero-kicker>Teaching through systems</span>
-      <h2 data-hero-title>Hands-on robotics sessions</h2>
-      <p data-hero-text>Demos, tools, and classroom systems that make abstract motion feel concrete.</p>
-    </div>
-    <div class="home-hero__controls">
-      <button class="home-hero__button" type="button" data-hero-prev aria-label="Previous scene">&#8592;</button>
-      <div class="home-hero__dots" data-hero-dots aria-label="Scene selector"></div>
-      <button class="home-hero__button" type="button" data-hero-next aria-label="Next scene">&#8594;</button>
-    </div>
-    <div class="home-hero__progress" aria-hidden="true"><span data-hero-progress></span></div>
-  </aside>
+  <div class="home-hero__caption">
+    <span data-hero-kicker>Robotic manipulation</span>
+    <h2 data-hero-title>Learning-based grasp planning</h2>
+    <p data-hero-text>A UR5e, RGB-D perception, and a three-finger gripper brought into the same execution loop.</p>
+  </div>
+
+  <div class="home-hero__controls">
+    <button class="home-hero__button" type="button" data-hero-prev aria-label="Previous scene">&#8592;</button>
+    <div class="home-hero__dots" data-hero-dots aria-label="Scene selector"></div>
+    <button class="home-hero__button" type="button" data-hero-next aria-label="Next scene">&#8594;</button>
+  </div>
+  <div class="home-hero__progress" aria-hidden="true"><span data-hero-progress></span></div>
 
   <script type="application/json" data-hero-slides>
     [
-      {
-        "src": "{{ base_path }}/images/talks/teaching_kids_2.jpg",
-        "alt": "Teaching robotics concepts in a classroom",
-        "kicker": "Teaching through systems",
-        "title": "Hands-on robotics sessions",
-        "text": "Demos, tools, and classroom systems that make abstract motion feel concrete."
-      },
       {
         "src": "{{ base_path }}/images/3-finger-grasp-planning/hardware_setup.png",
         "alt": "UR5e and Robotiq three-finger gripper hardware setup",
@@ -61,18 +56,25 @@ redirect_from:
         "text": "A UR5e, RGB-D perception, and a three-finger gripper brought into the same execution loop."
       },
       {
-        "src": "{{ base_path }}/images/talks/battery_disassembly.jpg",
-        "alt": "Presenting semi-autonomous battery disassembly work",
-        "kicker": "Physical prototypes",
-        "title": "Robots meeting messy hardware",
-        "text": "Mechanisms, fixtures, sensors, and workflows tested outside the comfort of simulation."
+        "src": "{{ base_path }}/images/battery_disassembly/Setup.jpg",
+        "alt": "UR5e robot and semi-autonomous battery disassembly setup",
+        "kicker": "Human-robot collaboration",
+        "title": "Semi-autonomous battery disassembly",
+        "text": "A direct-recycling workflow that pairs robotic handling with a purpose-built pouch-cell mechanism."
       },
       {
-        "src": "{{ base_path }}/images/art/street_landscape.jpg",
-        "alt": "Colorful street landscape painting",
-        "kicker": "Creative observation",
-        "title": "Sketchbook practice",
-        "text": "Color, framing, and attention as a quiet counterpart to engineering judgment."
+        "src": "{{ base_path }}/images/talks/teaching_kids_2.jpg",
+        "alt": "Teaching robotics concepts in a classroom",
+        "kicker": "Teaching through systems",
+        "title": "Hands-on robotics sessions",
+        "text": "Demos, tools, and classroom systems that make abstract motion feel concrete."
+      },
+      {
+        "src": "{{ base_path }}/images/talks/Upskilling_for_mumbai_university.jpg",
+        "alt": "Robotics upskilling workshop with students",
+        "kicker": "Applied learning",
+        "title": "Workshops and robotics outreach",
+        "text": "Practical sessions that connect mechanisms, code, perception, and real-world intuition."
       }
     ]
   </script>
