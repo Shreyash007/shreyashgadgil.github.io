@@ -367,9 +367,11 @@
 }
 
 .home-hero--cinematic {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
   min-height: clamp(560px, 76vh, 760px);
   padding: clamp(1rem, 3vw, 2.4rem);
-  align-items: end;
+  align-items: stretch;
   background: #08191c;
   box-shadow: 0 26px 80px rgba(8, 25, 28, 0.18);
 }
@@ -383,15 +385,18 @@
 }
 
 .home-hero--cinematic .home-hero__showcase {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+  position: relative;
+  inset: auto;
+  z-index: 2;
+  grid-column: 1;
+  grid-row: 2;
   display: block;
   min-height: 0;
-  border: 0;
-  border-radius: 0;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
   background: #08191c;
-  box-shadow: none;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
   animation: none;
 }
 
@@ -447,7 +452,9 @@
 
 .home-hero--cinematic .home-hero__copy {
   z-index: 3;
-  max-width: 690px;
+  grid-column: 1;
+  grid-row: 1;
+  max-width: none;
   padding: clamp(1.15rem, 3vw, 2rem);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -462,14 +469,14 @@
 }
 
 .home-hero--cinematic h1 {
-  max-width: 660px;
+  max-width: 720px;
   color: #fff;
-  font-size: clamp(2.35rem, 5vw, 4.65rem);
-  line-height: 0.98;
+  font-size: clamp(1.14rem, 1.92vw, 1.8rem);
+  line-height: 1.06;
 }
 
 .home-hero--cinematic .home-hero__lede {
-  max-width: 36rem;
+  max-width: 48rem;
   color: rgba(255, 255, 255, 0.82);
   font-size: 1rem;
 }
@@ -494,12 +501,12 @@
 }
 
 .home-hero--cinematic .home-hero__caption {
-  position: absolute;
-  right: clamp(1rem, 3vw, 2rem);
-  bottom: clamp(4.6rem, 8vw, 6rem);
-  left: auto;
+  position: relative;
+  inset: auto;
   z-index: 3;
-  width: min(390px, calc(100% - 2rem));
+  grid-column: 1;
+  grid-row: 4;
+  width: auto;
   padding: 1rem 1.1rem;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -521,10 +528,15 @@
 }
 
 .home-hero--cinematic .home-hero__controls {
+  position: relative;
   top: auto;
-  bottom: 1.2rem;
-  left: clamp(1rem, 3vw, 2rem);
-  right: clamp(1rem, 3vw, 2rem);
+  right: auto;
+  bottom: auto;
+  left: auto;
+  grid-column: 1;
+  grid-row: 3;
+  width: auto;
+  margin: 0.15rem 0 0;
 }
 
 .home-hero--cinematic .home-hero__button {
@@ -541,7 +553,7 @@
 }
 
 .home-hero--cinematic .home-hero__dots {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .home-hero--cinematic .home-hero__dot {
@@ -554,6 +566,15 @@
 }
 
 .home-hero--cinematic .home-hero__progress {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  grid-column: 1;
+  grid-row: 5;
+  width: auto;
+  border-radius: 999px;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.14);
 }
 

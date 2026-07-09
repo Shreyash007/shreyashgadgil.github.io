@@ -11,13 +11,6 @@ redirect_from:
 {% include base_path %}
 
 <section class="home-hero home-hero--cinematic" data-hero-stage data-hero-interval="6200" aria-label="Homepage introduction">
-  <aside class="home-hero__showcase" aria-live="polite">
-    <div class="home-hero__visual">
-      <img src="{{ base_path }}/images/3-finger-grasp-planning/hardware_setup.png" alt="UR5e and Robotiq three-finger gripper hardware setup" data-hero-image>
-    </div>
-    <div class="home-hero__shade" aria-hidden="true"></div>
-  </aside>
-
   <div class="home-hero__copy">
     <p class="home-hero__eyebrow">Robotics engineer</p>
     <h1>I build robots that sense, move, and work in the real world.</h1>
@@ -33,6 +26,13 @@ redirect_from:
       <a class="home-action" href="mailto:shreyashgadgil007@gmail.com">Contact me</a>
     </div>
   </div>
+
+  <aside class="home-hero__showcase" aria-live="polite">
+    <div class="home-hero__visual">
+      <img src="{{ base_path }}/images/3-finger-grasp-planning/hardware_setup.png" alt="UR5e and Robotiq three-finger gripper hardware setup" data-hero-image>
+    </div>
+    <div class="home-hero__shade" aria-hidden="true"></div>
+  </aside>
 
   <div class="home-hero__caption">
     <span data-hero-kicker>Robotic manipulation</span>
