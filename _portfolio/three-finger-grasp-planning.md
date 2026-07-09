@@ -9,7 +9,7 @@ header:
 
 {% include base_path %}
 
-Most learning-based grasp planners use a rectangular representation designed for parallel-jaw grippers. Three-finger grippers support a wider range of pinch, basic, and enveloping grasps, so this project introduced a representation tailored to their geometry.
+Most learning-based grasp planners use a rectangular representation designed for parallel-jaw grippers. Three-finger grippers support a wider range of pinch, basic, and enveloping grasps, so this project introduced a representation tailored to the geometry of 3-finger gripper.
 
 <figure>
   <img src="{{ base_path }}/images/3-finger-grasp-planning/Triangular%20notation.png" alt="Triangular grasp notation for a three-finger gripper">
