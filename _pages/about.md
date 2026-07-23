@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Shreyash Gadgil"
-description: "Shreyash Gadgil is a robotics engineer and researcher working on robotic manipulation, autonomous systems, machine learning, and lithium-ion battery recycling."
+description: "Shreyash Gadgil is a roboticist and researcher working on robotic manipulation, autonomous systems, machine learning, and lithium-ion battery recycling."
 author_profile: true
 redirect_from:
   - /about/
@@ -12,9 +12,9 @@ redirect_from:
 
 <section class="home-hero home-hero--cinematic" data-hero-stage data-hero-interval="6200" aria-label="Homepage introduction">
   <div class="home-hero__copy">
-    <p class="home-hero__eyebrow">Robotics engineer</p>
+    <p class="home-hero__eyebrow">Roboticist</p>
     <h1>I build robots that sense, move, and work in the real world.</h1>
-    <p class="home-hero__lede">I'm Shreyash Gadgil, a robotics engineer working across manipulation, autonomous systems, mechanical design, and machine learning pipelines. I like building systems that leave the lab notebook and survive contact with real hardware, sensors, tolerances, and people.</p>
+    <p class="home-hero__lede">I'm Shreyash Gadgil, a roboticist working across manipulation, autonomous systems, mechanical design, and machine learning pipelines. I like building systems that leave the lab notebook and survive contact with real hardware, sensors, tolerances, and people.</p>
     <div class="home-hero__signals" aria-label="Selected areas of work">
       <span>Robotic manipulation</span>
       <span>Autonomous systems</span>

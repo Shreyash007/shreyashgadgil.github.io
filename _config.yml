@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Shreyash Gadgil - Robotics Engineer"
+title                    : "Shreyash Gadgil - Roboticist"
 title_separator          : "-"
 name                     : &name "Shreyash Gadgil"
-description              : &description "Shreyash Gadgil is a robotics engineer and researcher working on robotic manipulation, autonomous systems, machine learning, and lithium-ion battery recycling."
+description              : &description "Shreyash Gadgil is a roboticist and researcher working on robotic manipulation, autonomous systems, machine learning, and lithium-ion battery recycling."
 url                      : https://shreyash007.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "/shreyashgadgil.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "shreyash007/shreyashgadgil.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Shreyash Gadgil"
   pronouns         : # example: "she/her"  
-  bio              : "Robotics engineer and researcher"
+  bio              : "Roboticist and researcher"
   location         : "India"
   employer         : "TIH IIT Bombay"
   uri              : "https://shreyash007.github.io/shreyashgadgil.github.io/"
@@ -126,7 +126,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification :
+google_site_verification : google288b3150b46123a8.html
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -177,18 +177,29 @@ exclude:
   - assets/js/vendor
   - CHANGELOG
   - Capfile
+  - CONTENT_EDITING.md
   - config
   - Dockerfile
+  - files/paper3.pdf
+  - files/slides1.pdf
+  - files/slides2.pdf
+  - files/slides3.pdf
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
+  - portfolio
   - Rakefile
   - README
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
   - tmp
   - vendor
 keep_files:

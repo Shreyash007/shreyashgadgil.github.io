@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+description: "Curriculum vitae of Shreyash Gadgil, a roboticist working across robotic manipulation, autonomous systems, mechatronics, and machine learning."
 permalink: /cv/
 author_profile: true
 redirect_from:
