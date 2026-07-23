@@ -1250,6 +1250,258 @@
   }
 }
 
+/* Lightweight homepage motion
+   ========================================================================== */
+
+.home-hero--cinematic {
+  --hero-pointer-x: 72%;
+  --hero-pointer-y: 24%;
+}
+
+.home-hero--cinematic .home-hero__copy {
+  animation: none;
+}
+
+.home-hero--cinematic .home-hero__eyebrow,
+.home-hero--cinematic h1,
+.home-hero--cinematic .home-hero__lede,
+.home-hero--cinematic .home-actions,
+.home-hero--cinematic .home-hero__signals span {
+  animation: hero-detail-rise 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.home-hero--cinematic .home-hero__eyebrow {
+  animation-delay: 0.06s;
+}
+
+.home-hero--cinematic h1 {
+  animation-delay: 0.13s;
+}
+
+.home-hero--cinematic .home-hero__lede {
+  animation-delay: 0.2s;
+}
+
+.home-hero--cinematic .home-hero__signals span:nth-child(1) {
+  animation-delay: 0.29s;
+}
+
+.home-hero--cinematic .home-hero__signals span:nth-child(2) {
+  animation-delay: 0.34s;
+}
+
+.home-hero--cinematic .home-hero__signals span:nth-child(3) {
+  animation-delay: 0.39s;
+}
+
+.home-hero--cinematic .home-hero__signals span:nth-child(4) {
+  animation-delay: 0.44s;
+}
+
+.home-hero--cinematic .home-actions {
+  animation-delay: 0.51s;
+}
+
+.home-hero--cinematic .home-hero__showcase,
+.home-hero--cinematic .home-hero__controls,
+.home-hero--cinematic .home-hero__caption,
+.home-hero--cinematic .home-hero__progress {
+  animation: hero-panel-enter 0.82s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.home-hero--cinematic .home-hero__showcase {
+  animation-delay: 0.12s;
+}
+
+.home-hero--cinematic .home-hero__controls {
+  animation-delay: 0.24s;
+}
+
+.home-hero--cinematic .home-hero__caption {
+  animation-delay: 0.32s;
+  animation-fill-mode: backwards;
+}
+
+.home-hero--cinematic .home-hero__progress {
+  animation-delay: 0.4s;
+}
+
+.home-hero--cinematic .home-hero__showcase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle 15rem at var(--hero-pointer-x) var(--hero-pointer-y),
+      rgba(240, 163, 94, 0.2),
+      rgba(85, 197, 208, 0.07) 34%,
+      transparent 70%
+    );
+  opacity: 0.48;
+  transition: opacity 0.35s ease;
+}
+
+.home-hero--cinematic.is-pointer-active .home-hero__showcase::after {
+  opacity: 0.82;
+}
+
+.home-hero--cinematic .home-hero__visual,
+.home-hero--cinematic .home-hero__visual img,
+.home-hero--cinematic .home-hero__caption {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-hero--cinematic .home-hero__visual img {
+  transition-duration: 0.58s;
+  will-change: opacity, transform;
+}
+
+.home-hero--cinematic.is-changing .home-hero__visual img {
+  animation: none;
+}
+
+.home-hero--cinematic .home-hero__button {
+  transition:
+    color 0.22s ease,
+    border-color 0.22s ease,
+    background-color 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+.home-hero--cinematic .home-hero__button:hover,
+.home-hero--cinematic .home-hero__button:focus-visible {
+  box-shadow: 0 8px 22px rgba(8, 25, 28, 0.2);
+  transform: translateY(-2px);
+}
+
+.home-hero--cinematic .home-hero__button:active {
+  box-shadow: none;
+  transform: translateY(0) scale(0.95);
+}
+
+.home-hero--cinematic .home-hero__dot {
+  transform: scale(1);
+  transition:
+    width 0.24s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-hero--cinematic .home-hero__dot:hover,
+.home-hero--cinematic .home-hero__dot:focus-visible {
+  border-color: #fff;
+  transform: scale(1.16);
+}
+
+.home-hero__progress span {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+.page__content .home-hero--cinematic .home-action {
+  position: relative;
+  transition:
+    color 0.24s ease,
+    border-color 0.24s ease,
+    background-color 0.24s ease,
+    box-shadow 0.24s ease,
+    transform 0.24s ease;
+}
+
+.page__content .home-hero--cinematic .home-action:hover,
+.page__content .home-hero--cinematic .home-action:focus-visible {
+  box-shadow: 0 10px 26px rgba(8, 25, 28, 0.2);
+  transform: translateY(-2px);
+}
+
+.page__content .home-hero--cinematic .home-action:active {
+  box-shadow: none;
+  transform: translateY(0) scale(0.98);
+}
+
+.page__content .home-hero--cinematic .home-action:focus-visible,
+.page__content .home-section .home-route:focus-visible,
+.home-hero--cinematic .home-hero__button:focus-visible,
+.home-hero--cinematic .home-hero__dot:focus-visible {
+  outline: 2px solid var(--portfolio-warm);
+  outline-offset: 3px;
+}
+
+.home-motion-group.is-motion-enabled .home-motion-item {
+  opacity: 0;
+  transform: translate3d(0, 1rem, 0);
+  transition:
+    opacity 0.64s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.64s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.home-motion-group.is-motion-enabled.is-motion-visible .home-motion-item {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-delay: var(--home-motion-delay, 0ms);
+}
+
+.home-section .identity-card {
+  transition:
+    border-color 0.28s ease,
+    box-shadow 0.28s ease,
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-section .identity-card:hover {
+  box-shadow: 0 14px 34px rgba(19, 124, 139, 0.14);
+  transform: translateY(-4px);
+}
+
+.home-section .home-focus-card::after {
+  transform: scaleX(0.55);
+  transform-origin: right center;
+  transition:
+    opacity 0.28s ease,
+    transform 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-section .home-focus-card:hover::after {
+  opacity: 0.9;
+  transform: scaleX(1.35);
+}
+
+.page__content .home-section .home-route {
+  position: relative;
+  transition:
+    color 0.24s ease,
+    border-color 0.24s ease;
+}
+
+.page__content .home-section .home-route::after {
+  content: "";
+  position: absolute;
+  top: 1.55rem;
+  right: 0;
+  width: 1.75rem;
+  height: 2px;
+  background: var(--portfolio-accent);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition:
+    opacity 0.24s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.page__content .home-section .home-route:hover::after,
+.page__content .home-section .home-route:focus-visible::after {
+  opacity: 0.8;
+  transform: scaleX(1);
+}
+
 @keyframes hero-rise {
   from {
     opacity: 0;
@@ -1259,6 +1511,30 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes hero-detail-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0.7rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-panel-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0.55rem, 0) scale(0.992);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -1294,11 +1570,11 @@
 
 @keyframes hero-progress {
   from {
-    width: 0;
+    transform: scaleX(0);
   }
 
   to {
-    width: 100%;
+    transform: scaleX(1);
   }
 }
 
@@ -1316,6 +1592,45 @@
   .talk-group__photos img {
     animation: none;
     transition: none;
+  }
+
+  .home-hero--cinematic .home-hero__eyebrow,
+  .home-hero--cinematic h1,
+  .home-hero--cinematic .home-hero__lede,
+  .home-hero--cinematic .home-actions,
+  .home-hero--cinematic .home-hero__signals span,
+  .home-hero--cinematic .home-hero__controls,
+  .home-hero--cinematic .home-hero__caption,
+  .home-hero--cinematic .home-hero__progress,
+  .home-action,
+  .home-hero__button,
+  .home-focus-card::after,
+  .home-route::after {
+    animation: none;
+    transition: none;
+  }
+
+  .home-hero--cinematic .home-hero__showcase::after {
+    opacity: 0.36;
+  }
+
+  .home-motion-group.is-motion-enabled .home-motion-item,
+  .home-motion-group.is-motion-enabled.is-motion-visible .home-motion-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .page__content .home-hero--cinematic .home-action:hover,
+  .page__content .home-hero--cinematic .home-action:focus-visible,
+  .page__content .home-hero--cinematic .home-action:active,
+  .home-hero--cinematic .home-hero__button:hover,
+  .home-hero--cinematic .home-hero__button:focus-visible,
+  .home-hero--cinematic .home-hero__button:active,
+  .home-hero--cinematic .home-hero__dot:hover,
+  .home-hero--cinematic .home-hero__dot:focus-visible,
+  .home-section .identity-card:hover {
+    transform: none;
   }
 
   .home-hero.is-changing .home-hero__visual img {
