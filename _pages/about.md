@@ -10,6 +10,33 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="home-stage">
+  <div class="home-ambient" aria-hidden="true">
+    <svg class="home-ambient__circuits" viewBox="0 0 1000 1500" preserveAspectRatio="none" focusable="false">
+      <g class="home-ambient__trace-group">
+        <path class="home-ambient__trace" d="M0 210 H118 Q150 210 150 242 V420 Q150 452 182 452 H285" />
+        <path class="home-ambient__trace home-ambient__trace--warm" d="M1000 340 H866 Q834 340 834 372 V610 Q834 642 802 642 H704" />
+        <path class="home-ambient__trace" d="M0 900 H205 Q237 900 237 932 V1125 Q237 1157 269 1157 H430 Q462 1157 462 1189 V1500" />
+        <path class="home-ambient__trace home-ambient__trace--warm" d="M1000 980 H905 Q873 980 873 1012 V1235 Q873 1267 841 1267 H650" />
+      </g>
+      <g class="home-ambient__pulse-group">
+        <path class="home-ambient__pulse home-ambient__pulse--one" d="M0 210 H118 Q150 210 150 242 V420 Q150 452 182 452 H285" />
+        <path class="home-ambient__pulse home-ambient__pulse--two" d="M1000 340 H866 Q834 340 834 372 V610 Q834 642 802 642 H704" />
+        <path class="home-ambient__pulse home-ambient__pulse--three" d="M0 900 H205 Q237 900 237 932 V1125 Q237 1157 269 1157 H430 Q462 1157 462 1189 V1500" />
+        <path class="home-ambient__pulse home-ambient__pulse--four" d="M1000 980 H905 Q873 980 873 1012 V1235 Q873 1267 841 1267 H650" />
+      </g>
+      <g class="home-ambient__nodes">
+        <circle cx="150" cy="420" r="5" />
+        <circle cx="834" cy="610" r="5" />
+        <circle cx="237" cy="1125" r="5" />
+        <circle cx="873" cy="1235" r="5" />
+      </g>
+    </svg>
+    <span class="home-ambient__gear home-ambient__gear--one"><i class="fas fa-gear"></i></span>
+    <span class="home-ambient__gear home-ambient__gear--two"><i class="fas fa-gear"></i></span>
+    <span class="home-ambient__gear home-ambient__gear--three"><i class="fas fa-gear"></i></span>
+  </div>
+
 <section class="home-hero home-hero--cinematic" data-hero-stage data-hero-interval="6200" aria-label="Homepage introduction">
   <div class="home-hero__copy">
     <p class="home-hero__eyebrow">Robotics engineer</p>
@@ -97,9 +124,10 @@ redirect_from:
 <section class="home-section home-section--compact">
   <p class="section-kicker">Explore</p>
   <div class="home-route-grid">
-    <a class="home-route" href="{{ base_path }}/publications/"><strong>Research</strong><span>Publications, patents, and theses</span></a>
-    <a class="home-route" href="{{ base_path }}/work/"><strong>Projects & Notes</strong><span>Robotics, design, experiments, and writing</span></a>
-    <a class="home-route" href="{{ base_path }}/talks/"><strong>Talks</strong><span>Presentations and teaching</span></a>
-    <a class="home-route" href="{{ base_path }}/art/"><strong>Art</strong><span>Paintings, sketches, and studies</span></a>
+    <a class="home-route" href="{{ base_path }}/publications/"><strong>Research</strong><span class="home-route__description">Publications, patents, and theses</span><span class="home-route__arrow" aria-hidden="true">&#8594;</span></a>
+    <a class="home-route" href="{{ base_path }}/work/"><strong>Projects & Notes</strong><span class="home-route__description">Robotics, design, experiments, and writing</span><span class="home-route__arrow" aria-hidden="true">&#8594;</span></a>
+    <a class="home-route" href="{{ base_path }}/talks/"><strong>Talks</strong><span class="home-route__description">Presentations and teaching</span><span class="home-route__arrow" aria-hidden="true">&#8594;</span></a>
+    <a class="home-route" href="{{ base_path }}/art/"><strong>Art</strong><span class="home-route__description">Paintings, sketches, and studies</span><span class="home-route__arrow" aria-hidden="true">&#8594;</span></a>
   </div>
 </section>
+</div>
