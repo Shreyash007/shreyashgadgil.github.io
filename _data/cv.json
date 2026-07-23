@@ -96,32 +96,26 @@
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "CIR, IIIT Allahabad",
+      "event": "Centre for Intelligent Robotics, IIIT Allahabad",
+      "location": "Prayagraj, Uttar Pradesh",
+      "description": "Technical session connecting manipulation, autonomy, hardware integration, and practical robotics demonstrations."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Battery Disassembly",
+      "event": "Research demonstration",
+      "description": "Semi-autonomous lithium-ion battery disassembly using UR5e, ROS, MoveIt, AprilTag localization, and a custom mechanism."
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
+      "name": "Teaching Young Learners",
+      "event": "STEM outreach and hands-on learning",
+      "description": "Interactive introduction to robotics, sensing, mechanisms, and engineering thinking for young students."
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Upskilling for Mumbai University",
+      "event": "Mumbai University",
+      "location": "Mumbai, Maharashtra",
+      "description": "Faculty and student upskilling session focused on robotics, mechatronics, prototyping, automation, and applied engineering workflows."
     }
   ],
   "teaching": [

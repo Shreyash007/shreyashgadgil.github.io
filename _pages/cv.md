@@ -53,7 +53,8 @@ Publications
 
 Talks
 ======
-<ul>{% for post in site.talks reversed %}
+{% assign cv_talks = site.talks | sort: "cv_order" %}
+<ul>{% for post in cv_talks %}
   {% include archive-single-talk-cv.html  %}
 {% endfor %}</ul>
 
