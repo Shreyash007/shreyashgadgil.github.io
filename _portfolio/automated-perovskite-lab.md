@@ -16,4 +16,3 @@ header:
   <figcaption>Current DILBOT laboratory setup.</figcaption>
 </figure>
 
-[Project manual (PDF)]({{ base_path }}/images/automated-pervoskite-lab/DILBOT_Manual%20%281%29.pdf)
